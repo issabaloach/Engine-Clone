@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+          sans:[ -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"]  ,  
+          monospace:[ SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace]
+        }
+      }
+    }
+    </script>
+    <style>
+         hover-text:hover{
+           transform: translate(-50px);
+           transition: ease-in;
+         }
+         ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+    </style>
+</head>
+<body>
+
+    <!-- nav image -->
+    <div class=" w-[100px] mt-5  text-center mx-auto ">
+        <img src="https://cdn.shopify.com/s/files/1/0553/3774/6621/files/New_Logo_Engine.svg?v=1636960920" alt="">
+    </div>
+      <!-- main image -->
+     <div class=" h-[400px] mt-4 flex  ">
+       <div class="relative ...">
+        <img src="https://engine.com.pk/cdn/shop/files/Men_1_3e26e33d-27d8-406b-92f0-515b28558d19.jpg?v=1719405810" alt=""> 
+          <div class="absolute inset-x-0 bottom-[-180px] h-16 left-[155px] text-white transition ease-in-out delay-150 hover:-translate-y hover:scale-110 duration-300">
+            <h2 class="text-5xl font-mono font-bold">MEN</h2>
+            <button id="men" class="btn border-2 border-white text-2xl mt-3  ">Shop Now</button>
+          </div> 
+       </div>
+       <div>
+        <img src="https://engine.com.pk/cdn/shop/files/Women_1_c75dcba6-6998-4ec9-98df-3f08a2373b20.png?v=1719405810" alt="">
+        <div class="absolute inset-x-0 bottom-[-5px] h-16 left-[540px] text-white transition ease-in-out delay-150 hover:-translate-y hover:scale-110 duration-300 ">
+          <h2 class="text-5xl font-mono font-bold">WOMEN</h2>
+          <button id="women" class="btn border-2 border-white text-2xl mt-3  ">Shop Now</button>
+        </div> 
+       </div>
+       <div>
+        <img src="https://engine.com.pk/cdn/shop/files/Kids_1_84a7988f-52db-4ba2-a6f0-475aa3bd3302.png?v=1719405810" alt="">
+        <div class="hover-text absolute inset-x-0 bottom-[-5px] h-16 left-[1020px] text-white transition ease-in-out delay-150 hover:-translate-y hover:scale-110 duration-300">
+          <h2 class="text-5xl font-mono font-bold">KIDS</h2>
+          <button id="kids" class="btn border-2 border-white text-2xl mt-3  ">Shop Now</button>
+        </div> 
+       </div>
+     </div>
+     
+     <!-- socials -->
+       <div class="font-sans mt-[290px] justify-center text-center">
+        <h5>BE A PART OF OUR SOCIAL FAMILY</h5>
+          <ul class="socials flex justify-center mt-4 gap-4 ">
+            <li class="fa-brands fa-facebook transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"></li>
+            <li class="fa-brands fa-instagram transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"></li>
+            <li class="fa-brands fa-snapchat transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"></li>
+            <li class="fa-brands fa-pinterest transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"></li>
+            <li class="fa-brands fa-youtube transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"></li>
+            <li class="fa-brands fa-tiktok transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"></li>
+            <li class="fa-brands fa-linkedin transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"></li>
+           </ul>
+       </div>
+
+<!-- copyright -->
+       <div class="mt-7 text-center text-white bg-black font-bold font-mono p-0 text-sm">
+         <h4>© Copyright 2024 by M.K APPAREL (ENGINE). All Rights Reserved.</h4>
+       </div>
+
+
+
+       <script src="script.js" type="module"></script>
+</body>
+</html>
