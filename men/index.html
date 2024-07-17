@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEN</title>
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar-links {
+            display: flex;
+            gap: 10px;
+            color: black;
+
+        }
+        .navbar-center {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-center img {
+            height: 30px; /* Adjust as needed */
+        }
+        .navbar-icons {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
 </head>
 <body>
+
+    <nav class="navbar">
+        <div class="navbar-links">
+            <a href="/men/index.html">MEN</a>
+            <a href="/women/index.html">WOMEN</a>
+            <a href="/kids/index.html">KIDS</a>
+        </div>
+        <div class="navbar-center">
+            <img src="https://cdn.shopify.com/s/files/1/0553/3774/6621/files/New_Logo_Engine.svg?v=1636960920" alt="Logo">
+        </div>
+        <div class="navbar-icons">
+            <a href=""><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </nav>
+
+
     
+
+
 </body>
 </html>
