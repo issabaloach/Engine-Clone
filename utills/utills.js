@@ -29,14 +29,14 @@ import {
   getDownloadURL,
 } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-storage.js";
 const firebaseConfig = {
-    apiKey: "AIzaSyAgFoHyxZSC2w8NABxjfXJxydoj07c9Vns",
-    authDomain: "e-commerce-website-cf228.firebaseapp.com",
-    projectId: "e-commerce-website-cf228",
-    storageBucket: "e-commerce-website-cf228.appspot.com",
-    messagingSenderId: "1025914022056",
-    appId: "1:1025914022056:web:ade424054cb6654489ba9d",
-    measurementId: "G-91WHDBSS22"
-  };
+  apiKey: "AIzaSyAgFoHyxZSC2w8NABxjfXJxydoj07c9Vns",
+  authDomain: "e-commerce-website-cf228.firebaseapp.com",
+  projectId: "e-commerce-website-cf228",
+  storageBucket: "e-commerce-website-cf228.appspot.com",
+  messagingSenderId: "1025914022056",
+  appId: "1:1025914022056:web:ade424054cb6654489ba9d",
+  measurementId: "G-91WHDBSS22"
+};
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
