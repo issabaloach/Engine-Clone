@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>women Tops</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="//engine.com.pk/cdn/shop/files/16x16-logo_2_32x32.png?v=1622783950" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+          .custom-grid img {
+            height: 290px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar-links {
+            display: flex;
+            gap: 10px;
+            color: black;
+
+        }
+        .navbar-center {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-center img {
+            height: 30px; /* Adjust as needed */
+        }
+        .navbar-icons {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-links">
+            <a href="/index.html">HOME</a>
+            <a href="/men/index.html">MEN</a>
+            <a href="/women/index.html">WOMEN</a>
+            <a href="/kids/index.html">KIDS</a>
+        </div>
+        <div class="navbar-center">
+            <img src="https://cdn.shopify.com/s/files/1/0553/3774/6621/files/New_Logo_Engine.svg?v=1636960920" alt="Logo">
+        </div>
+        <div class="navbar-icons">
+            <a href="/auth/login/index.html"><i class="fa-regular fa-user"></i></a>
+            <a href="/cart/index.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+    </nav>
+    <div class="container mx-auto py-8">
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Products will be injected here by JavaScript -->
+        </div>
+    </div>
+    <script src="script.js " type="module"></script>
+</body>
+</html>

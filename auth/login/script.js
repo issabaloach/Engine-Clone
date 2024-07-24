@@ -2,7 +2,7 @@ import { auth, signInWithEmailAndPassword } from "../../utills/utills.js";
 
 const login_form = document.getElementById("login_form");
 
-login_form.addEventListener("submit", function (e) {
+login_form.addEventListener("submit", (e) => {
   e.preventDefault();
   const email = e.target[0].value;
   const password = e.target[1].value;
