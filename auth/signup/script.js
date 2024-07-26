@@ -47,7 +47,7 @@ createUserWithEmailAndPassword(auth, email, password)
         // Getting URL of the image we just uploaded
         getDownloadURL(userRef)
           .then((url) => {
-            console.log("url agya bhai=>", url);
+            console.log("image url", url);
 
             // Update user info object
             userInfo.img = url;
@@ -58,7 +58,7 @@ createUserWithEmailAndPassword(auth, email, password)
             // Set this document to DB
             setDoc(userDbRef, userInfo).then(() => {
               console.log("User Object Updated into DB");
-              window.location.href = "/";
+              // window.location.href = "/";
               submit_btn.disabled = false;
               submit_btn.innerText = "Submit";
             });

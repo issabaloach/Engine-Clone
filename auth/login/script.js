@@ -11,7 +11,7 @@ login_form.addEventListener("submit", (e) => {
 
   signInWithEmailAndPassword(auth, email, password)
     .then(() => {
-      window.location.href = "/index.html";
+      window.location.href = "/";
     })
     .catch((err) => alert(err));
 });

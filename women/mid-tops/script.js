@@ -1,3 +1,4 @@
+import { auth , db, doc, addDoc, collection } from "../../utills/utills.js";
 const products = [
     {
         title: "Women Printed Mid-Length Tops",
@@ -109,7 +110,31 @@ products.forEach(product => {
     eyeIcon.innerHTML = `<svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21c-4.418 0-8-3.582-8-8 0-4.418 3.582-8 8-8s8 3.582 8 8c0 4.418-3.582 8-8 8z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 9l-4 4-2-2"></path></svg>`;
     iconsContainer.appendChild(eyeIcon);
 
+    const addToCartButton = document.createElement('button');
+    addToCartButton.textContent = 'Add to Cart';
+    addToCartButton.classList.add('bg-blue-500', 'text-white', 'px-4', 'py-2', 'rounded');
+    addToCartButton.addEventListener('click', () => addToCart(product));
+    iconsContainer.appendChild(addToCartButton);
+
     productCard.appendChild(iconsContainer);
 
     productGrid.appendChild(productCard);
 });
+
+async function addToCart(product) {
+    const user = auth.currentUser;
+    if (user) {
+        const cartItemsRef = collection(db, 'carts', user.uid, 'items');
+        await addDoc(cartItemsRef, {
+            productName: product.title,
+            quantity: 1, // or any default quantity
+            price: product.discountedPrice || product.price,
+            imageUrl: product.imageUrl
+        });
+        alert('Product added to cart');
+    } else {
+        alert('Please log in to add items to your cart');
+    }
+}
+
+export { addToCart };

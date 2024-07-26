@@ -13,6 +13,9 @@ import {
   setDoc,
   getDoc,
   getDocs,
+  addDoc,
+  collection,
+  deleteDoc
 } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
 import {
   getStorage,
@@ -54,6 +57,10 @@ export {
   setDoc,
   getDoc,
   getDocs,
+  deleteDoc,
+  addDoc,
   onAuthStateChanged,
-  signOut
+  signOut,
+  collection
+
 };
