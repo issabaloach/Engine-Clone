@@ -58,7 +58,7 @@ createUserWithEmailAndPassword(auth, email, password)
             // Set this document to DB
             setDoc(userDbRef, userInfo).then(() => {
               console.log("User Object Updated into DB");
-              // window.location.href = "/";
+              window.location.href = "/";
               submit_btn.disabled = false;
               submit_btn.innerText = "Submit";
             });
